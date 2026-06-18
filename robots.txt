@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Block utility / non-content files from indexing
+Disallow: /original.html
+Disallow: /audit.txt
+Disallow: /compress.mjs
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /node_modules/
+Disallow: /images_backup/
+
+Sitemap: https://www.amoghagoldbuyers.com/sitemap.xml

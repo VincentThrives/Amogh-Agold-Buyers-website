@@ -1,0 +1,11 @@
+# Dev / build artifacts (not part of the published site)
+images_backup/
+original.html
+audit.txt
+node_modules/
+package.json
+package-lock.json
+*.mjs
+
+# Local editor / preview config
+.claude/
