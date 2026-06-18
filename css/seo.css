@@ -58,6 +58,7 @@
 .social-float .sf-ig{ background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); box-shadow:0 0 18px rgba(220,39,67,.7); }
 .social-float .sf-in{ background:#0A66C2; box-shadow:0 0 18px rgba(10,102,194,.7); }
 .social-float .sf-x{ background:#000; box-shadow:0 0 18px rgba(255,255,255,.45); }
+.social-float .sf-call{ background:linear-gradient(135deg,#d4af37,#b8860b); box-shadow:0 0 18px rgba(212,175,55,.75); }
 
 @media (max-width:768px){
   .social-float{ right:20px; bottom:88px; gap:10px; }
