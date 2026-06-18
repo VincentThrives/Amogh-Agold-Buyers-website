@@ -30,3 +30,36 @@
   .diamond-content h2.diamond-heading{font-size:2.2rem;line-height:1.2;}
   .luxury-content h2.lux-heading{font-size:32px;line-height:1.3;}
 }
+
+/* ===== Floating social icons (right side, matching the WhatsApp button) ===== */
+.social-float{
+  position:fixed;
+  right:25px;
+  bottom:100px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  z-index:9999;
+}
+.social-float a{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:20px;
+  text-decoration:none;
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+.social-float a:hover{ transform:scale(1.15); }
+.social-float .sf-fb{ background:#1877F2; box-shadow:0 0 18px rgba(24,119,242,.7); }
+.social-float .sf-ig{ background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); box-shadow:0 0 18px rgba(220,39,67,.7); }
+.social-float .sf-in{ background:#0A66C2; box-shadow:0 0 18px rgba(10,102,194,.7); }
+.social-float .sf-x{ background:#000; box-shadow:0 0 18px rgba(255,255,255,.45); }
+
+@media (max-width:768px){
+  .social-float{ right:20px; bottom:88px; gap:10px; }
+  .social-float a{ width:42px; height:42px; font-size:18px; }
+}
