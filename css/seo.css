@@ -35,11 +35,22 @@
 .social-float{
   position:fixed;
   right:25px;
-  bottom:100px;
+  top:50%;
+  transform:translateY(-50%);
   display:flex;
   flex-direction:column;
   gap:14px;
   z-index:9999;
+}
+/* WhatsApp button normalized to sit inside the centered stack */
+.social-float .wa-link{ background:transparent; box-shadow:none; padding:0; }
+.social-float .wa-link .waicon{
+  position:static;
+  right:auto;
+  bottom:auto;
+  width:48px;
+  height:48px;
+  font-size:24px;
 }
 .social-float a{
   width:48px;
@@ -73,6 +84,7 @@
 .premium-text p{ text-shadow:0 1px 4px rgba(0,0,0,.8); }
 
 @media (max-width:768px){
-  .social-float{ right:20px; bottom:88px; gap:10px; }
+  .social-float{ right:14px; gap:10px; }
   .social-float a{ width:42px; height:42px; font-size:18px; }
+  .social-float .wa-link .waicon{ width:42px; height:42px; font-size:22px; }
 }
