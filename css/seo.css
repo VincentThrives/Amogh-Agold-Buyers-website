@@ -50,7 +50,7 @@
   bottom:auto;
   width:48px;
   height:48px;
-  font-size:24px;
+  font-size:20px;
 }
 .social-float a{
   width:48px;
@@ -69,7 +69,7 @@
 .social-float .sf-ig{ background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); box-shadow:0 0 18px rgba(220,39,67,.7); }
 .social-float .sf-in{ background:#0A66C2; box-shadow:0 0 18px rgba(10,102,194,.7); }
 .social-float .sf-x{ background:#000; box-shadow:0 0 18px rgba(255,255,255,.45); }
-.social-float .sf-call{ background:linear-gradient(135deg,#d4af37,#b8860b); box-shadow:0 0 18px rgba(212,175,55,.75); }
+.social-float .sf-call{ background:linear-gradient(135deg,#2196f3,#1565c0); box-shadow:0 0 18px rgba(33,150,243,.7); }
 
 /* ===== Premium service cards: stronger text contrast for readability ===== */
 .premium-overlay{
@@ -86,5 +86,5 @@
 @media (max-width:768px){
   .social-float{ right:14px; gap:10px; }
   .social-float a{ width:42px; height:42px; font-size:18px; }
-  .social-float .wa-link .waicon{ width:42px; height:42px; font-size:22px; }
+  .social-float .wa-link .waicon{ width:42px; height:42px; font-size:18px; }
 }
