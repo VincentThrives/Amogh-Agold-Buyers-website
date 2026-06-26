@@ -186,3 +186,68 @@
   transform:translateY(-3px);
   box-shadow:0 8px 18px rgba(0,0,0,.25);
 }
+
+/* ===== Premium inner-page hero banners (About / Branch / Contact) ===== */
+.about-hero,
+.branch-hero,
+.contact-hero{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+  min-height:320px !important;
+  background-repeat:no-repeat !important;
+  background-position:center !important;
+  background-size:cover !important;
+  position:relative;
+}
+.about-hero{   background-image:linear-gradient(rgba(28,5,42,.80),rgba(60,11,82,.68)), url("../images/about-banner.jpg")   !important; }
+.branch-hero{  background-image:linear-gradient(rgba(28,5,42,.80),rgba(60,11,82,.68)), url("../images/branch-banner.jpg")  !important; }
+.contact-hero{ background-image:linear-gradient(rgba(28,5,42,.80),rgba(60,11,82,.68)), url("../images/contact-banner.jpg") !important; }
+
+/* Centered, polished hero text */
+.about-hero .hero-content,
+.branch-hero .hero-content,
+.contact-hero .hero-content{
+  width:auto !important;
+  max-width:880px;
+  margin:0 auto !important;
+  text-align:center !important;
+  padding:0 22px;
+}
+.about-hero .hero-content h1,
+.branch-hero .hero-content h1,
+.contact-hero .hero-content h1{
+  font-size:46px !important;
+  text-align:center !important;
+  margin:0 0 14px !important;
+  line-height:1.15;
+}
+/* Gold underline accent beneath the heading */
+.about-hero .hero-content h1::after,
+.branch-hero .hero-content h1::after,
+.contact-hero .hero-content h1::after{
+  content:"";
+  display:block;
+  width:90px;
+  height:3px;
+  margin:16px auto 0;
+  border-radius:2px;
+  background:linear-gradient(90deg,#d4af37,#fff2b0,#d4af37);
+}
+.about-hero .hero-content p,
+.branch-hero .hero-content p,
+.contact-hero .hero-content p{
+  color:#f3e9d6 !important;
+  font-size:18px !important;
+  text-align:center !important;
+  max-width:760px;
+  margin:0 auto !important;
+  line-height:1.75;
+}
+
+@media (max-width:768px){
+  .about-hero, .branch-hero, .contact-hero{ min-height:210px !important; }
+  .about-hero .hero-content h1, .branch-hero .hero-content h1, .contact-hero .hero-content h1{ font-size:27px !important; }
+  .about-hero .hero-content p, .branch-hero .hero-content p, .contact-hero .hero-content p{ font-size:14px !important; }
+}
