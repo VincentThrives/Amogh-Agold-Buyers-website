@@ -5,7 +5,8 @@ audit.txt
 node_modules/
 package.json
 package-lock.json
-*.mjs
+/compress.mjs
 
 # Local editor / preview config
 .claude/
+audit2.txt

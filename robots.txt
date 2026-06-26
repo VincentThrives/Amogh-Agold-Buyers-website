@@ -9,5 +9,7 @@ Disallow: /package.json
 Disallow: /package-lock.json
 Disallow: /node_modules/
 Disallow: /images_backup/
+Disallow: /tests/
+Disallow: /audit2.txt
 
 Sitemap: https://www.amoghagoldbuyers.com/sitemap.xml
