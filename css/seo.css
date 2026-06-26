@@ -251,3 +251,26 @@
   .about-hero .hero-content h1, .branch-hero .hero-content h1, .contact-hero .hero-content h1{ font-size:27px !important; }
   .about-hero .hero-content p, .branch-hero .hero-content p, .contact-hero .hero-content p{ font-size:14px !important; }
 }
+
+/* ===== Landing hero: elegant brand name label ===== */
+.slideContent .brand-label{
+  display:inline-block;
+  color:#ffd86a;
+  font-family:'Poppins',sans-serif;
+  font-weight:700;
+  font-size:1.05rem;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  margin-bottom:16px;
+  padding-bottom:8px;
+  border-bottom:2px solid rgba(212,175,55,.75);
+  text-shadow:0 2px 10px rgba(0,0,0,.55);
+  animation:brandFade 1s ease both;
+}
+@keyframes brandFade{
+  from{ opacity:0; transform:translateY(-10px); }
+  to{ opacity:1; transform:translateY(0); }
+}
+@media (max-width:768px){
+  .slideContent .brand-label{ font-size:.72rem; letter-spacing:2.5px; margin-bottom:10px; padding-bottom:5px; }
+}
