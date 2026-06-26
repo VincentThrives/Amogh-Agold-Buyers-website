@@ -201,9 +201,9 @@
   background-size:100% 100% !important;   /* show the full banner edge-to-edge (left & right visible) */
   position:relative;
 }
-.about-hero{   background-image:linear-gradient(rgba(28,5,42,.52),rgba(60,11,82,.40)), url("../images/about-banner.jpg")   !important; }
-.branch-hero{  background-image:linear-gradient(rgba(28,5,42,.52),rgba(60,11,82,.40)), url("../images/branch-banner.jpg")  !important; }
-.contact-hero{ background-image:linear-gradient(rgba(28,5,42,.52),rgba(60,11,82,.40)), url("../images/contact-banner.jpg") !important; }
+.about-hero{   background-image:linear-gradient(90deg,rgba(28,5,42,.08) 0%,rgba(28,5,42,.62) 36%,rgba(40,8,60,.62) 64%,rgba(28,5,42,.08) 100%), url("../images/about-banner.jpg")   !important; }
+.branch-hero{  background-image:linear-gradient(90deg,rgba(28,5,42,.08) 0%,rgba(28,5,42,.62) 36%,rgba(40,8,60,.62) 64%,rgba(28,5,42,.08) 100%), url("../images/branch-banner.jpg")  !important; }
+.contact-hero{ background-image:linear-gradient(90deg,rgba(28,5,42,.08) 0%,rgba(28,5,42,.62) 36%,rgba(40,8,60,.62) 64%,rgba(28,5,42,.08) 100%), url("../images/contact-banner.jpg") !important; }
 
 /* Centered, polished hero text */
 .about-hero .hero-content,
