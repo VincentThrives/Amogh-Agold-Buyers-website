@@ -99,3 +99,37 @@
   .social-float a{ width:42px; height:42px; font-size:18px; }
   .social-float .wa-link .waicon{ width:42px; height:42px; font-size:18px; }
 }
+
+/* ===== White header theme (clean & premium) ===== */
+.luxury-header,
+.luxury-header.scrolled{
+  background:#ffffff !important;
+  backdrop-filter:none !important;
+  border-bottom:1px solid rgba(212,175,55,.55) !important;
+  box-shadow:0 4px 18px rgba(0,0,0,.08) !important;
+}
+/* Nav links: dark & bold for strong contrast on white */
+.luxury-header .nav-menu a,
+.luxury-header.scrolled .nav-menu a{
+  color:#3b0a57 !important;
+  font-weight:700 !important;
+}
+.luxury-header .nav-menu a:hover,
+.luxury-header.scrolled .nav-menu a:hover{
+  color:#b8860b !important;
+  text-shadow:none !important;
+}
+/* SELL GOLD button keeps its gold gradient; ensure dark readable label */
+.luxury-header .header-btn,
+.luxury-header.scrolled .header-btn{ color:#3b0a57 !important; }
+/* Hamburger lines dark on the white header */
+.luxury-header .menu-toggle span{ background:#3b0a57 !important; }
+
+@media (max-width:768px){
+  /* Mobile slide-in menu panel -> white to match the header */
+  .nav-menu{
+    background:#ffffff !important;
+    box-shadow:-6px 0 24px rgba(0,0,0,.12) !important;
+    border-left:1px solid rgba(212,175,55,.55) !important;
+  }
+}
