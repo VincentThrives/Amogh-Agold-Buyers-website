@@ -251,9 +251,12 @@
 }
 
 @media (max-width:768px){
-  .about-hero, .branch-hero, .contact-hero{ min-height:210px !important; }
+  /* clear the fixed white header so hero text isn't hidden behind it */
+  .about-hero, .branch-hero, .contact-hero{ min-height:210px !important; margin-top:96px !important; }
   .about-hero .hero-content h1, .branch-hero .hero-content h1, .contact-hero .hero-content h1{ font-size:27px !important; }
   .about-hero .hero-content p, .branch-hero .hero-content p, .contact-hero .hero-content p{ font-size:14px !important; }
+  /* trim the mobile header height a little (smaller logo) */
+  .luxury-header .header-logo{ width:130px !important; }
 }
 
 /* ===== Landing hero: elegant brand name label ===== */
