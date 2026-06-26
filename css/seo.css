@@ -173,3 +173,16 @@
 @media (max-width:992px){
   .header-phone{ font-size:1rem; }
 }
+
+/* ===== "Get in Touch" social icons: brand colours + real links ===== */
+.contact-info .social-icons a{
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.contact-info .social-icons a.ic-fb{ background:#1877F2 !important; }
+.contact-info .social-icons a.ic-ig{ background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888) !important; }
+.contact-info .social-icons a.ic-in{ background:#0A66C2 !important; }
+.contact-info .social-icons a.ic-x{ background:#000 !important; }
+.contact-info .social-icons a:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 18px rgba(0,0,0,.25);
+}
