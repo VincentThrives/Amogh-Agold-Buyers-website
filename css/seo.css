@@ -190,6 +190,20 @@
   box-shadow:0 8px 18px rgba(0,0,0,.25);
 }
 
+/* Brand-coloured social icons anywhere (.social-icons), incl. footer */
+.social-icons a.ic-fb,
+.social-icons a.ic-ig,
+.social-icons a.ic-call,
+.social-icons a.ic-wa{ color:#fff !important; transition:transform .25s ease, box-shadow .25s ease; }
+.social-icons a.ic-fb{ background:#1877F2 !important; }
+.social-icons a.ic-ig{ background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888) !important; }
+.social-icons a.ic-call{ background:linear-gradient(135deg,#2196f3,#1565c0) !important; }
+.social-icons a.ic-wa{ background:#25D366 !important; }
+.social-icons a.ic-fb:hover,
+.social-icons a.ic-ig:hover,
+.social-icons a.ic-call:hover,
+.social-icons a.ic-wa:hover{ transform:translateY(-3px); box-shadow:0 8px 18px rgba(0,0,0,.3); }
+
 /* ===== Premium inner-page hero banners (About / Branch / Contact) ===== */
 .about-hero,
 .branch-hero,
