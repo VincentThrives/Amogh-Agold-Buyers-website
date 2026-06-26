@@ -124,6 +124,9 @@
 .luxury-header.scrolled .header-btn{ color:#3b0a57 !important; }
 /* Hamburger lines dark on the white header */
 .luxury-header .menu-toggle span{ background:#3b0a57 !important; }
+/* Active page highlighted: gold link + persistent gold underline */
+.luxury-header .nav-menu a.active{ color:#b8860b !important; }
+.luxury-header .nav-menu a.active::after{ width:100% !important; }
 
 @media (max-width:768px){
   /* Mobile slide-in menu panel -> white to match the header */

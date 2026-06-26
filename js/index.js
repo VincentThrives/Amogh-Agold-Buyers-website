@@ -260,3 +260,13 @@ toggle.addEventListener("click", function(){
   toggle.classList.toggle("active");
   menu.classList.toggle("active");
 });
+// ===== Highlight the current page in the header nav =====
+(function(){
+  var page = (location.pathname.split('/').pop() || 'index').replace(/\.html$/, '');
+  if (page === '') page = 'index';
+  document.querySelectorAll('.nav-menu a[href]').forEach(function(a){
+    var href = a.getAttribute('href');
+    if (href.indexOf('tel:') === 0 || href.charAt(0) === '#') return;
+    if (href.replace(/\.html$/, '') === page) a.classList.add('active');
+  });
+})();
