@@ -133,3 +133,43 @@
     border-left:1px solid rgba(212,175,55,.55) !important;
   }
 }
+
+/* ===== Premium header: trust + conversion accents ===== */
+/* Crisp gold accent line under the header + soft depth shadow */
+.luxury-header,
+.luxury-header.scrolled{
+  box-shadow:0 2px 0 0 #d4af37, 0 8px 24px rgba(0,0,0,.10) !important;
+}
+
+/* Visible, clickable phone number (builds trust + drives calls) */
+.header-phone{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:#3b0a57;
+  font-weight:700;
+  font-size:1.15rem;
+  text-decoration:none;
+  white-space:nowrap;
+  transition:color .25s ease;
+}
+.header-phone i{ color:#b8860b; }
+.header-phone:hover{ color:#b8860b; }
+
+/* SELL GOLD: gentle attention pulse so the eye lands on the CTA */
+@keyframes sellGoldPulse{
+  0%,100%{ box-shadow:0 6px 16px rgba(212,175,55,.35); }
+  50%{ box-shadow:0 0 22px rgba(212,175,55,.85), 0 6px 22px rgba(212,175,55,.55); }
+}
+.luxury-header .header-btn{
+  animation:sellGoldPulse 2.2s ease-in-out infinite;
+  font-weight:800 !important;
+  letter-spacing:.4px;
+}
+@media (prefers-reduced-motion: reduce){
+  .luxury-header .header-btn{ animation:none; }
+}
+
+@media (max-width:992px){
+  .header-phone{ font-size:1rem; }
+}
