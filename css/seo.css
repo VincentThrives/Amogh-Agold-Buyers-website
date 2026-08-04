@@ -301,3 +301,12 @@
 /* Clickable address link (Google Maps) inherits text colour */
 .addr-link{ color:inherit; text-decoration:none; transition:color .2s ease; }
 .addr-link:hover{ color:#b8860b; }
+
+/* Keep the About reception photo compact on mobile (was too tall) */
+@media (max-width:768px){
+  .about-pro-image img{
+    max-height:210px !important;
+    object-fit:cover !important;
+    object-position:center !important;
+  }
+}
