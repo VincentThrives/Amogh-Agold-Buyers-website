@@ -208,11 +208,12 @@ describe('14. Schema Markup (JSON-LD)', () => {
   }
 });
 
-describe('15. Google Analytics (GA4)', () => {
+describe('15. Google tag / Analytics (gtag.js)', () => {
   for (const p of PAGES) {
-    test(`${p} includes the GA4 gtag snippet`, () => {
-      assert.match(htmlOf[p], /googletagmanager\.com\/gtag\/js\?id=G-/i, `${p} missing GA4 loader`);
-      assert.match(htmlOf[p], /gtag\(['"]config['"],\s*['"]G-/i, `${p} missing gtag config`);
+    test(`${p} includes a Google tag (gtag.js) loader + config`, () => {
+      // Accepts GA4 (G-) or Google Ads (AW-) measurement/conversion IDs
+      assert.match(htmlOf[p], /googletagmanager\.com\/gtag\/js\?id=(G|AW)-/i, `${p} missing gtag loader`);
+      assert.match(htmlOf[p], /gtag\(['"]config['"],\s*['"](G|AW)-/i, `${p} missing gtag config`);
     });
   }
 });
